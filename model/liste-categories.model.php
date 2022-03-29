@@ -6,12 +6,10 @@ include('model/pdo.inc.php');
 
 try{
     $query= 
-    "SELECT DISTINCT cat_descr
+    "SELECT  cat_descr
 
-    FROM blog_posts
+    FROM blog_categories
 
-    INNER JOIN blog_categories
-    ON post_category = cat_id
 
     ";
 
@@ -19,7 +17,7 @@ try{
     $req-> setFetchMode(PDO::FETCH_ASSOC);
 
     $data = $req->fetchAll();
-    var_dump($data);
+    // var_dump($data);
 
 
 }catch (Exception $e) {
@@ -27,4 +25,3 @@ try{
 
 }
 
-$titre = "liste des catégories";

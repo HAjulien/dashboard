@@ -30,4 +30,3 @@ try{
 
 }
 
-$titre = "liste article";

@@ -24,4 +24,3 @@ try{
 
 }
 
-$titre = "liste des utilisateurs";

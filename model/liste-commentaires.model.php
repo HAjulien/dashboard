@@ -29,4 +29,3 @@ try{
 
 }
 
-$titre = "liste des commentaires";
